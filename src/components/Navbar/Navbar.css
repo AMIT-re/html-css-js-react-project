@@ -1,0 +1,79 @@
+body {
+    margin: 0; /* Remove default body margin for full-width navbar */
+    font-family: Arial, sans-serif; /* A common sans-serif font like Netflix uses */
+    background-color: #141414; /* Netflix background color */
+}
+
+.navbar {
+    position: fixed; /* Stays at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Spans the full width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.Navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between logo and menu items */
+}
+
+.logoui {
+    width: 50px; /* Adjust size to be more like Netflix logo */
+    height: auto;
+    margin-right: 15px; /* Add some space between the logo and the links */
+}
+
+.Navbar-left ul {
+    display: flex;
+    list-style: none;
+    gap: 18px; /* Slightly larger gap for menu items */
+    margin: 0;
+    padding: 0;
+}
+
+.Navbar-left li {
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.Navbar-left li:hover {
+    color: #b3b3b3; /* Lighter grey on hover */
+}
+
+.Navbar-right {
+    display: flex;
+    gap: 20px; /* Space between search, bell, and profile */
+    align-items: center;
+}
+
+/* Adjust icon sizes as they appear in the image */
+.searchbutton,
+.bellicon {
+    width: 25px; /* Slightly smaller for icons */
+    height: auto;
+    cursor: pointer;
+    filter: invert(100%); /* If icons are black and need to be white */
+    transition: opacity 0.3s ease;
+}
+
+.searchbutton:hover,
+.bellicon:hover {
+    opacity: 0.7;
+}
+
+/* New class for the profile icon (smiley face) */
+.profile-icon {
+    width: 30px; /* Larger for the profile icon */
+    height: auto;
+    cursor: pointer;
+    border-radius: 4px; /* Netflix often has slightly rounded profile pics */
+}
