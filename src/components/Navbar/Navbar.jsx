@@ -4,6 +4,7 @@ import Logo from '../../assets/Logo.jpeg'
 import searchicon from '../../assets/searchicon.png'
 import smileicon from '../../assets/smileicons.png'
 import bell from '../../assets/bell.png'
+import Arrow from '../../assets/arrow.png'
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -21,7 +22,16 @@ const Navbar = () => {
             <img src={searchicon} alt="search-icon" className="searchbutton"/>
             <p>Children</p>
             <img src={bell} alt ="bell icon" className="bellicon"/>
-            <img src={smileicon} alt ="smile icon"/>
+            <div className="profile-wrapper">
+            <img src={smileicon} alt ="smile icon" className="profile-icon"/>
+            <img src={Arrow} alt="caret_icon" className="careticon"/>
+            <div className="dropdown">
+                <p>
+                    Sign Out from Netflix
+                </p>
+
+            </div>
+            </div>
         </div>
 
     </div>

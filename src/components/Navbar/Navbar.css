@@ -1,7 +1,7 @@
-body {
+.body {
     margin: 0; /* Remove default body margin for full-width navbar */
     font-family: Arial, sans-serif; /* A common sans-serif font like Netflix uses */
-    background-color: #141414; /* Netflix background color */
+   background-color: rgba(0, 0, 0, 0); /* Netflix background color */
 }
 
 .navbar {
@@ -76,4 +76,44 @@ body {
     height: auto;
     cursor: pointer;
     border-radius: 4px; /* Netflix often has slightly rounded profile pics */
+    position: relative;
 }
+
+.careticon{
+    width:25px;
+    height: auto;
+    cursor: pointer;
+}
+
+.dropdown{
+    position:absolute;
+    top: 100%;
+    right:0;
+    width:max-content;
+    background: #191919;
+    padding: 18px 22px;
+    border-radius: 2px;
+    text-decoration: underline;
+    z-index: 1;
+   display: none;
+
+}
+
+.dropdown p{
+    font-size: 13px;
+    cursor: pointer;
+
+
+}
+.profile-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Show dropdown when hovering over profile-wrapper */
+.profile-wrapper:hover .dropdown {
+  display: block;
+}
+
