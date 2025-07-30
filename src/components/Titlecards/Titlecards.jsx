@@ -1,11 +1,12 @@
 import React from 'react'
 import './Titlecards.css'
 import cards_data from '../../assets/cards/cards_data'
-const Titlecards = () => {
+const Titlecards = ({title,category}) => {
   return (
     <div className="title-cards">
       <h2 className='heading'>
-        Popular On Netflix
+        {title?title:"Popular On Netflix"}
+        
       </h2>
       <div className="card-list">
         {cards_data.map((card,index)=>{
