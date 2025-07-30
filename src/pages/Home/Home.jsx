@@ -18,7 +18,7 @@ const home = () => {
                figure in the fight to save Earth from the evil Decepticons.</p>
                <div className="herobtns">
                 <button className="playButton"> <img src={Play} alt="" />Play</button>
-                <button className="infobutton"> <img src={Info} alt="" />more infp</button>
+                <button className="infobutton"> <img src={Info} alt="" /> More info</button>
 
                </div>
         </div>

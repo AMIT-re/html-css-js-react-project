@@ -1,7 +1,8 @@
+
 .body {
     margin: 0; /* Remove default body margin for full-width navbar */
     font-family: Arial, sans-serif; /* A common sans-serif font like Netflix uses */
-   background-color: rgba(0, 0, 0, 0); /* Netflix background color */
+   background:#6d6d6eb3; /* Netflix background color */
 }
 
 .navbar {

@@ -35,7 +35,8 @@
   margin-bottom: 50px;
 }
 
-.playbutton{
+
+.herobtns .playButton{
   border:0;
   outline:0;
   padding:8px 20px;
@@ -45,10 +46,39 @@
   font-size: 15px;
   font-weight: 600;
   background:white;
+  border-radius: 4px;
+  cursor:pointer;
 
 }
 
 .infobutton{
 
+  border:0;
+  outline:0;
+  padding:8px 20px;
+  display:inline-flex;
+  align-items: center;
+  gap:10px;
+  font-size: 15px;
+  font-weight: 600;
+  color:#fff;
+  background:#6d6d6eb3;
+  border-radius: 4px;
+  cursor:pointer;
+
+
 }
+
+.herobtns .playButton:hover{
+  background:#ffffffbf ;
+
+
+}
+
+.herobtns .infobutton:hover{
+  background:#ffffffbf ;
+  
+
+}
+
 
