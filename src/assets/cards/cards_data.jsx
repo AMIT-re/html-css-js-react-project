@@ -60,7 +60,7 @@ const cards_data = [
   },
   {
     image: card_img12,
-    name: "Black Mirrro"
+    name: "Black Mirror"
   },
   {
     image: card_img13,
@@ -73,4 +73,4 @@ const cards_data = [
 ];
 
 
-export default cardsData;
+export default cards_data;

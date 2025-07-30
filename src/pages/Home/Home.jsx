@@ -5,6 +5,7 @@ import herobanner from '../../assets/herosection.jpg'
 import herotitle from '../../assets/herotit.png'
 import Play from '../../assets/play.png'
 import Info from '../../assets/info.png'
+import Titlecards from '../../components/Titlecards/Titlecards'
 
 const home = () => {
   return (
@@ -19,8 +20,10 @@ const home = () => {
                <div className="herobtns">
                 <button className="playButton"> <img src={Play} alt="" />Play</button>
                 <button className="infobutton"> <img src={Info} alt="" /> More info</button>
+                             
 
                </div>
+               <Titlecards/>   
         </div>
       </div>
       

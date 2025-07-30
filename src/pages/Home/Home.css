@@ -3,12 +3,14 @@
     margin: 0;
     position:relative ;
 }
-.caption-img{
-  top: 10px;
+.hero-caption .caption-img{
+  width: 500px;
+
 
 }
 .banner-img{
   width: 100%;
+  background-repeat: no-repeat;
   mask-image: linear-gradient(to right, transparent,black 75%);
   -webkit-mask-image: linear-gradient(to right, transparent,black 75%);  
 }
